@@ -1,0 +1,164 @@
+	<html>
+  <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script src="js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {'packages':['motionchart'], 'language' : 'pt_BR'});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Palavra');
+        data.addColumn('number', '');
+        data.addColumn('number', 'Ordem: ocorrências');
+        data.addColumn('string', 'Fonte');
+
+    	data.addRows([
+    	     		 ["Deus",  2010,111113,"Fontes Oficiais"] 
+    	     		,["dia",  2010,90075,"Fontes Oficiais"] 
+    	     		,["Brasil",  2010,73156,"Fontes Oficiais"] 
+    	     		,["mulher",  2010,72960,"Fontes Oficiais"] 
+    	     		,["rio",  2010,32431,"Fontes Oficiais"] 
+    	     		,["presidente",  2010,26539,"Fontes Oficiais"] 
+    	     		,["segundo turno",  2010,24913,"Fontes Oficiais"] 
+    	     		,["debate",  2010,20455,"Fontes Oficiais"] 
+    	     		,["campanha",  2010,19532,"Fontes Oficiais"] 
+    	     		,["Lula",  2010,19462,"Fontes Oficiais"] 
+    	     		,["ato",  2010,18147,"Fontes Oficiais"] 
+    	     		,["campanha",  2010,16090,"Fontes Oficiais"] 
+    	     		,["parabens",  2010,12936,"Fontes Oficiais"] 
+    	     		,["gabriel",  2010,10563,"Fontes Oficiais"] 
+    	     		,["governo",  2010,7520,"Fontes Oficiais"] 
+    	     		,["candidata",  2010,7107,"Fontes Oficiais"] 
+    	     		,["filho",  2010,5735,"Fontes Oficiais"] 
+    	     		,["brasileiros",  2010,4681,"Fontes Oficiais"] 
+    	     		,["rj",  2010,3279,"Fontes Oficiais"] 
+    	     		,["vovo",  2010,2065,"Fontes Oficiais"] 
+    	     		,["visita",  2010,1246,"Fontes Oficiais"] 
+    	     		,["curitiba",  2010,1090,"Fontes Oficiais"] 
+    	     		,["politico",  2010,1075,"Fontes Oficiais"] 
+    	     		,["porto",  2010,897,"Fontes Oficiais"] 
+    	     		,["alegre",  2010,546,"Fontes Oficiais"] 
+    	     		,["paulo",  2010,453,"Fontes Oficiais"] 
+    	     		,["alencar",  2010,234,"Fontes Oficiais"] 
+    	     		,["brasilia",  2010,183,"Fontes Oficiais"] 
+    	     		,["uniao",  2010,79,"Fontes Oficiais"] 
+    	     		,["coligacao",  2010,6,"Fontes Oficiais"] 
+    	     		,["rj20",  2010,2,"Fontes Oficiais"] 
+    	     		,["goncalo",  2010,1,"Fontes Oficiais"]
+    	     		,["pac",  2010,1958,"TV"] 
+    	     		,["pac 1",  2010,1041,"TV"] 
+    	     		,["primeira mulher",  2010,294,"TV"] 
+    	     		,["pac 2",  2010,283,"TV"] 
+    	     		,["orgulho",  2010,206,"TV"] 
+    	     		,["continuidade",  2010,199,"TV"] 
+    	     		,["segundo turno",  2010,185,"TV"] 
+    	     		,["pac",  2010,174,"TV"] 
+    	     		,["minha casa minha vida",  2010,171,"TV"] 
+    	     		,["lula",  2010,121,"TV"] 
+    	     		,["pre-sal",  2010,118,"TV"] 
+    	     		,["primeiro turno",  2010,112,"TV"] 
+    	     		,["upa",  2010,88,"TV"] 
+    	     		,["presidente",  2010,61,"TV"] 
+    	     		,["bolsa familia",  2010,46,"TV"] 
+    	     		,["consumo",  2010,29,"TV"] 
+    	     		,["continuidade",  2010,26,"TV"] 
+    	     		,["mulher presidente",  2010,20,"TV"] 
+    	     		,["voto",  2010,20,"TV"] 
+    	     		,["petrobras",  2010,17,"TV"] 
+    	     		,["mae",  2010,17,"TV"] 
+    	     		,["primeira mulher",  2010,16,"TV"] 
+    	     		,["grandes obras",  2010,15,"TV"] 
+    	     		,["obras",  2010,14,"TV"] 
+    	     		,["pac",  2010,13,"TV"] 
+    	     		,["petroleo",  2010,11,"TV"] 
+    	     		,["pre-sal",  2010,8,"TV"] 
+    	     		,["dilma minha casa minha vida",  2010,8,"TV"] 
+    	     		,["mudança",  2010,7,"TV"] 
+    	     		,["mudar",  2010,6,"TV"] 
+    	     		,["prouni",  2010,6,"TV"] 
+    	     		,["poder aquisitivo",  2010,5,"TV"] 
+    	     		,["rumo certo",  2010,5,"TV"] 
+    	     		,["competencia",  2010,4,"TV"] 
+    	     		,["lula",  2010,4,"TV"] 
+    	     		,["pac2",  2010,3,"TV"] 
+    	     		,["trabalho",  2010,3,"TV"] 
+    	     		,["continuacao",  2010,3,"TV"] 
+    	     		,["emprego",  2010,3,"TV"] 
+    	     		,["tecnica",  2010,3,"TV"] 
+    	     		,["deficientes",  2010,2,"TV"] 
+    	     		,["projetos",  2010,2,"TV"] 
+    	     		,["continuidade",  2010,2,"TV"] 
+    	     		,["obras",  2010,2,"TV"] 
+    	     		,["tecnologia",  2010,2,"TV"] 
+    	     		,["mulher",  2010,1,"TV"] 
+    	     		,["economia",  2010,1,"TV"] 
+    	     		,["qualidade",  2010,1,"TV"] 
+    	     		,["ensino profissionalizante",  2010,1,"TV"] 
+    	     		,["brasil pais melhor",  2010,1,"TV"] 
+    	     		,["petrobras",  2010,1,"TV"] 
+    	     		,["energia limpa",  2010,1,"TV"] 
+    	     		,["mudancas",  2010,1,"TV"] 
+    	     		,["Dilma",  2010,297082,"Tweets"]
+    	       		,["Lula",  2010,66778,"Tweets"]
+    	     		,["continuidade",  2010,37616,"Tweets"]
+    	     		,["seguir",  2010,33314,"Tweets"]
+    	     		,["13",  2010,30550,"Tweets"]
+    	     		,["PT",  2010,29714,"Tweets"]
+    	     		,["ganhar",  2010,27106,"Tweets"]
+    	     		,["presidente",  2010,24407,"Tweets"]
+    	     		,["povo",  2010,22955,"Tweets"]
+    	     		,["nordeste",  2010,21882,"Tweets"]
+    	     		,["pesquisa",  2010,18542,"Tweets"]
+    	     		,["#Dilma13",  2010,17376,"Tweets"]
+    	     		,["#ondavermelha",  2010,16026,"Tweets"]
+    	     		,["voitem",  2010,15357,"Tweets"]
+    	     		,["Erenice",  2010,15331,"Tweets"]
+    	     		,["Minas",  2010,15238,"Tweets"]
+    	     		,["Ibope",  2010,15205,"Tweets"]
+    	     		,["Safadeza",  2010,14959,"Tweets"]
+    	     		,["maioria",  2010,13738,"Tweets"]
+    	     		,["paulista",  2010,12006,"Tweets"]
+    	     		,["lidera",  2010,11465,"Tweets"]
+    	     		,["evolução",  2010,10132,"Tweets"]
+    	     		,["Dilma",  2010,9973,"Tweets"]
+    	     		,["coragem",  2010,9972,"Tweets"]
+    	     		,["Lula",  2010,9921,"Tweets"]
+    	     		,["continuar",  2010,9332,"Tweets"]
+    	     		,["#Dilma",  2010,9289,"Tweets"]
+    	     		,["coragem",  2010,9258,"Tweets"]
+    	     		,["Lula",  2010,9247,"Tweets"]
+    	     		,["continuar",  2010,8963,"Tweets"]
+    	     		,["#Dilma",  2010,8883,"Tweets"]
+    	     		,["crescer",  2010,8500,"Tweets"]
+    	     		,["Dilma",  2010,8419,"Tweets"]
+    	     		,["mulher",  2010,8392,"Tweets"]
+    	     		,["Marina",  2010,8141,"Tweets"]
+    	     		,["forte",  2010,8067,"Tweets"]
+    	     	]);
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height:300});
+
+		var options ={};
+			options['state'] = '{"iconKeySettings":[],"stateVersion":3,"time":"notime","xAxisOption":"_ALPHABETICAL","playDuration":15000,"iconType":"BUBBLE","sizeOption":"2","xZoomedDataMin":0,"xZoomedIn":false,"duration":{"multiplier":1,"timeUnit":"Y"},"yZoomedDataMin":1,"xLambda":1,"colorOption":"3","nonSelectedAlpha":0.4,"dimensions":{"iconDimensions":["dim0"]},"yZoomedIn":false,"yAxisOption":"2","yLambda":1,"yZoomedDataMax":297082,"showTrails":false,"xZoomedDataMax":116};"uniColorForNonSelected":false,"orderedByY":false,"orderedByX":false,';
+			options['width'] = 600;
+			options['height'] = 400;
+			options['showAdvancedPanel'] = false;
+			options['showHeader'] = false;
+			options['showSelectListComponent'] = true;
+			options['showTrails'] = false;
+			options['showSidePanel'] = true;
+			options['showXMetricPicker'] = true;
+			options['showYMetricPicker'] = false;
+			options['showXScalePicker'] = false;
+			options['showYScalePicker'] = false;
+			chart.draw(data, options);
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 600px; height: 300px;"></div>
+  </body>
+</html>

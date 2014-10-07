@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!-- Google API -->
+    	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/wordcumulus.js"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/swfobject.js"></script>
+
+		<script src="js/lib/jquery-1.4.2.min.js"></script>
+		<script>
+		google.load("visualization", "1");
+
+		// Set callback to run when API is loaded
+		google.setOnLoadCallback(drawCloudVisualization);
+
+		// Called when the Visualization API is loaded.
+		function drawCloudVisualization() {
+
+			// Create and populate a data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Tag');
+			data.addColumn('string', 'URL');
+			
+			data.addRows(100);
+
+			data.setCell(0, 0, "Marina");
+			data.setCell(1, 0, "Onda Verde");
+			data.setCell(2, 0, "PV");
+			data.setCell(3, 0, "debate");
+			data.setCell(4, 0, "honestidade");
+			data.setCell(5, 0, "verdadeira");
+			data.setCell(6, 0, "mulher");
+			data.setCell(7, 0, "Deus");
+			data.setCell(8, 0, "Vai Marina");
+			data.setCell(9, 0, "segundo turno");
+			data.setCell(10, 0, "reforma");
+			data.setCell(11, 0, "Dilma");
+			data.setCell(12, 0, "discurso");
+			data.setCell(13, 0, "presidente");
+			data.setCell(14, 0, "governo");
+			data.setCell(15, 0, "Serra");
+			data.setCell(16, 0, "Silva");
+			data.setCell(17, 0, "vamos marina");
+			data.setCell(18, 0, "marina");
+			data.setCell(19, 0, "prefiro");
+			data.setCell(20, 0, "#Marina43");
+			data.setCell(21, 0, "verde");
+			data.setCell(22, 0, "conquistou");
+			data.setCell(23, 0, "#marina43");
+			data.setCell(24, 0, "Plínio");
+			data.setCell(25, 0, "vai");
+			data.setCell(26, 0, "MARINA");
+			data.setCell(27, 0, "reflitam");
+			data.setCell(28, 0, "votar");
+			data.setCell(29, 0, "votam");
+			data.setCell(30, 0, "subindo");
+			data.setCell(31, 0, "pesquisas");
+			data.setCell(32, 0, "urnas");
+			data.setCell(33, 0, "consciência");
+			data.setCell(34, 0, "Dilma,");
+			data.setCell(35, 0, "Marina,");
+			data.setCell(36, 0, "séria");
+			data.setCell(37, 0, "crescer");
+			data.setCell(38, 0, "linda");
+			data.setCell(39, 0, "ultrapassa");
+			data.setCell(40, 0, "pontos");
+			data.setCell(41, 0, "sobe");
+			data.setCell(42, 0, "história");
+			data.setCell(43, 0, "quem");
+			data.setCell(44, 0, "@silva_marina");
+			data.setCell(45, 0, "43");
+			data.setCell(46, 0, "voto");
+			data.setCell(47, 0, "Serra,");
+			data.setCell(48, 0, "turno");
+			data.setCell(49, 0, "segundo");
+			data.setCell(50, 0, "mesmo");
+			data.setCell(51, 0, "#debate");
+			data.setCell(52, 0, "desempenho");
+			data.setCell(53, 0, "escola");
+			data.setCell(54, 0, "terra");
+			data.setCell(55, 0, "turno");
+			data.setCell(56, 0, "vota");
+			data.setCell(57, 0, "#ondaverde");
+			data.setCell(58, 0, "coerência");
+			data.setCell(59, 0, "mulher");
+			data.setCell(60, 0, "capital");
+			data.setCell(61, 0, "DF");
+			data.setCell(62, 0, "Marina.");
+			data.setCell(63, 0, "autoridade");
+			data.setCell(64, 0, "admiro");
+			data.setCell(65, 0, "amazônia");
+			data.setCell(66, 0, "Sábios");
+			data.setCell(67, 0, "surpreender");
+			data.setCell(68, 0, "divulgue");
+			data.setCell(69, 0, "confio");
+			data.setCell(70, 0, "Ministério");
+			data.setCell(71, 0, "presidente");
+			data.setCell(72, 0, "politicamente");
+			data.setCell(73, 0, "censura");
+			data.setCell(74, 0, "Evangelho");
+			data.setCell(75, 0, "2º");
+			data.setCell(76, 0, "liderando");
+			data.setCell(77, 0, "aborto");
+			data.setCell(78, 0, "futuro");
+			data.setCell(79, 0, "Brasil");
+			data.setCell(80, 0, "fervorosamente");
+			data.setCell(81, 0, "votei");
+			data.setCell(82, 0, "Mais Marina");
+			data.setCell(83, 0, "desmatamento");
+			data.setCell(84, 0, "evangélicos");
+			data.setCell(85, 0, "@apoiomarina");
+			data.setCell(86, 0, "presidente,");
+			data.setCell(87, 0, "votos");
+			data.setCell(88, 0, "religião");
+			data.setCell(89, 0, "defesa");
+			data.setCell(90, 0, "postura");
+			data.setCell(91, 0, "trabalho");
+			data.setCell(92, 0, "discurso");
+			data.setCell(93, 0, "seca");
+			data.setCell(94, 0, "maquiagem");
+			data.setCell(95, 0, "avatar");
+			data.setCell(96, 0, "ricos");
+			data.setCell(97, 0, "defesa");
+			data.setCell(98, 0, "votaria");
+			data.setCell(99, 0, "maior"); 
+
+			// Instantiate our table object.
+			var vis = new gviz_word_cumulus.WordCumulus(document.getElementById('content'));
+			
+			// Draw our table with the data we created locally.
+			vis.draw(data, {text_color: '#0D9F22', speed: 50, width:500, height:500});
+		}
+		
+		</script>
+</head>
+<body>
+        <div id="content"></div>	
+</body>
+</html>

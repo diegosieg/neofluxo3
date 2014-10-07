@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">  
+    <script src="js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {'packages':['motionchart'],  'language' : 'pt_BR'});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Palavra');
+        data.addColumn('number', '');
+        data.addColumn('number', 'Ordem: ocorrências');
+        data.addColumn('string', 'Fonte');
+
+   
+    	data.addRows([
+				 ["TV",2010,312372,"Fontes Oficiais"] 
+				,["site",2010,270228,"Fontes Oficiais"] 
+				,["Brasil",2010,183508,"Fontes Oficiais"] 
+				,["45",2010,128303,"Fontes Oficiais"] 
+				,["programa",2010,94413,"Fontes Oficiais"] 
+				,["Twitter",2010,78838,"Fontes Oficiais"] 
+				,["noite",2010,63079,"Fontes Oficiais"] 
+				,["presidente",2010,62844,"Fontes Oficiais"] 
+				,["tarde",2010,52695,"Fontes Oficiais"] 
+				,["vamos",2010,46305,"Fontes Oficiais"] 
+				,["vai",2010,36009,"Fontes Oficiais"] 
+				,["hoje",2010,26395,"Fontes Oficiais"] 
+				,["Globo",2010,21976,"Fontes Oficiais"] 
+				,["oficial",2010,21827,"Fontes Oficiais"] 
+				,["jornal",2010,8803,"Fontes Oficiais"] 
+				,["debate",2010,5935,"Fontes Oficiais"] 
+				,["campanha",2010,4197,"Fontes Oficiais"] 
+				,["São Paulo",2010,4087,"Fontes Oficiais"] 
+				,["mato",2010,1501,"Fontes Oficiais"] 
+				,["juntos",2010,1257,"Fontes Oficiais"] 
+				,["sabatina",2010,610,"Fontes Oficiais"] 
+				,["nordeste",2010,194,"Fontes Oficiais"] 
+				,["seguranca",2010,105,"Fontes Oficiais"] 
+				,["sinop",2010,17,"Fontes Oficiais"] 
+				,["adesivaço",2010,3,"Fontes Oficiais"] 
+    			,["metrô",2010,24626,"TV"] 
+				,["mulher",2010,4989,"TV"] 
+				,["Erenice",2010,711,"TV"] 
+				,["segundo turno",2010,644,"TV"] 
+				,["Erenice",2010,212,"TV"] 
+				,["saúde",2010,86,"TV"] 
+				,["serra do bem",2010,45,"TV"] 
+				,["presidente",2010,41,"TV"] 
+				,["responsabilidade",2010,41,"TV"] 
+				,["fat",2010,40,"TV"] 
+				,["metrô",2010,36,"TV"] 
+				,["corrupção",2010,31,"TV"] 
+				,["zé dirceu",2010,25,"TV"] 
+				,["hospitais",2010,18,"TV"] 
+				,["escola pública",2010,16,"TV"] 
+				,["Erenice",2010,16,"TV"] 
+				,["idosos",2010,15,"TV"] 
+				,["escândalo",2010,15,"TV"] 
+				,["Veja",2010,12,"TV"] 
+				,["salário mínimo",2010,9,"TV"] 
+				,["saúde",2010,6,"TV"] 
+				,["genérico",2010,6,"TV"] 
+				,["serra humilde",2010,5,"TV"] 
+				,["10 aposentado",2010,5,"TV"] 
+				,["serra mais competente",2010,4,"TV"] 
+				,["saude serra",2010,4,"TV"] 
+				,["genérico",2010,4,"TV"] 
+				,["experiente",2010,3,"TV"] 
+				,["bilhete único",2010,3,"TV"] 
+				,["família",2010,3,"TV"] 
+				,["propostas",2010,3,"TV"] 
+				,["confiança",2010,2,"TV"] 
+				,["salário mínimo 600",2010,2,"TV"] 
+				,["salário mínimo",2010,2,"TV"] 
+				,["melhores propostas",2010,1,"TV"] 
+				,["etec",2010,1,"TV"] 
+				,["capacidade",2010,1,"TV"] 
+				,["salário mínimo",2010,1,"TV"] 
+				,["futuro",2010,1,"TV"] 
+				,["preparo",2010,1,"TV"] 
+				,["ministro",2010,1,"TV"]
+				 ,["Serra",2010,189299,"Tweets"]
+				 ,["pesquisa",2010,157995,"Tweets"]
+				 ,["datafolha",2010,142375,"Tweets"]
+				 ,["presidente",2010,140841,"Tweets"]
+				 ,["aborto",2010,121189,"Tweets"]
+				 ,["melhor",2010,113276,"Tweets"]
+				 ,["careca",2010,89379,"Tweets"]
+				 ,["vantagem",2010,88365,"Tweets"]
+				 ,["Dilma",2010,68796,"Tweets"]
+				 ,["ensino",2010,68767,"Tweets"]
+				 ,["saúde",2010,58000,"Tweets"]
+				 ,["basta",2010,54935,"Tweets"]
+				 ,["ditadura",2010,54388,"Tweets"]
+				 ,["crescimento",2010,52376,"Tweets"]
+				 ,["não",2010,42932,"Tweets"]
+				 ,["São Paulo",2010,42609,"Tweets"]
+				 ,["buraco",2010,39962,"Tweets"]
+				 ,["para",2010,35398,"Tweets"]
+				 ,["frio",2010,30877,"Tweets"]
+				 ,["Marina",2010,27970,"Tweets"]
+				 ,["Serra,",2010,26970,"Tweets"]
+				 ,["Erenice",2010,23396,"Tweets"]
+				 ,["competência",2010,23255,"Tweets"]
+				 ,["competência",2010,22748,"Tweets"]
+				 ,["Serra",2010,22065,"Tweets"]
+				 ,["José",2010,21552,"Tweets"]
+				 ,["vai",2010,21513,"Tweets"]
+				 ,["tem",2010,20681,"Tweets"]
+				 ,["disputa",2010,18196,"Tweets"]
+				 ,["PCC",2010,17943,"Tweets"]
+				 ,["Deus",2010,17942,"Tweets"]
+				 ,["mais",2010,17689,"Tweets"]
+				 ,["por",2010,16925,"Tweets"]
+				 ,["Serra",2010,16385,"Tweets"]
+				 ,["uma",2010,15951,"Tweets"]
+				 ,["pra",2010,15675,"Tweets"]
+				 ,["turno",2010,14375,"Tweets"]
+				 ,["eu voto",2010,13034,"Tweets"]
+				 ,["Dilma",2010,12825,"Tweets"]
+				 ,["Datafolha,",2010,12409,"Tweets"]
+				 ,["ricos",2010,12314,"Tweets"]
+				 ,["acreditar",2010,11690,"Tweets"]
+				 ,["polícia",2010,11562,"Tweets"]
+				 ,["sonho",2010,11446,"Tweets"]
+				 ,["problemas",2010,10915,"Tweets"]
+				 ,["campanha",2010,10884,"Tweets"]
+				 ,["foi",2010,10863,"Tweets"]
+				 ,["votar",2010,10851,"Tweets"]
+				 ,["guerra",2010,10610,"Tweets"]
+				 ,["tucanos",2010,10355,"Tweets"]
+				 ,["desvantagem",2010,10255,"Tweets"]
+				 ,["marketeiros",2010,10177,"Tweets"]
+				 ,["mentiu",2010,10063,"Tweets"]
+				 ,["trabalhador",2010,9874,"Tweets"]
+				 ,["CQC",2010,9727,"Tweets"]
+				 ,["#Serra",2010,9209,"Tweets"]
+				 ,["voto",2010,9005,"Tweets"]
+				 ,["democracia",2010,8946,"Tweets"]
+				 ,["Brasil",2010,8928,"Tweets"]
+				 ,["contra",2010,8923,"Tweets"]
+				 ,["sobre",2010,8871,"Tweets"]
+				 ,["escondeu",2010,8798,"Tweets"]
+				 ,["cortes",2010,8552,"Tweets"]
+				 ,["FHC",2010,8375,"Tweets"]
+				 ,["impostos",2010,8056,"Tweets"]
+				 ,["Lula",2010,7591,"Tweets"]
+				 ,["censura",2010,7339,"Tweets"]
+				 ,["segundo",2010,7118,"Tweets"]
+				 ,["denunciar",2010,7004,"Tweets"]
+				 ,["experiência",2010,6965,"Tweets"]
+				 ,["agora",2010,6737,"Tweets"]
+				 ,["turno",2010,6655,"Tweets"]
+				 ,["vota",2010,6580,"Tweets"]
+				 ,["mal",2010,6528,"Tweets"]
+				 ,["#Dilma",2010,6378,"Tweets"]
+				 ,["argumentos",2010,6339,"Tweets"]
+				 ,["coerente",2010,6223,"Tweets"]
+				 ,["#Serra45",2010,6216,"Tweets"]
+				 ,["experiente",2010,6143,"Tweets"]
+				 ,["45",2010,6042,"Tweets"]
+				 ,["Serra",2010,5957,"Tweets"]
+				 ,["democracia",2010,5871,"Tweets"]
+				 ,["superfaturado",2010,5850,"Tweets"]
+				 ,["governo",2010,5813,"Tweets"]
+				 ,["Estado",2010,5785,"Tweets"]
+				 ,["pode",2010,5590,"Tweets"]
+				 ,["votos",2010,5542,"Tweets"]
+				 ,["apoio",2010,5517,"Tweets"]
+				 ,["partido",2010,5390,"Tweets"]
+				 ,["indecisos",2010,5388,"Tweets"]
+				 ,["ministro",2010,5353,"Tweets"]
+				 ,["@joseserra_",2010,5326,"Tweets"]
+				 ,["#Marina43",2010,5232,"Tweets"]
+				 ,["#serracaluniador",2010,5192,"Tweets"]
+				 ,["comedor",2010,5152,"Tweets"]
+				 ,["PT",2010,5142,"Tweets"]
+				 ,["muitas caras",2010,5074,"Tweets"]
+				 ,["São Paulo",2010,4997,"Tweets"]
+				 ,["muito",2010,4977,"Tweets"]
+				 ,["privatização",2010,4940,"Tweets"]
+				 ,["corja",2010,4927,"Tweets"]
+    	     	]);
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height:300});
+
+		var options ={};
+			options['state'] = '{"iconKeySettings":[],"stateVersion":3,"time":"notime","xAxisOption":"_ALPHABETICAL","playDuration":15000,"iconType":"BUBBLE","sizeOption":"2","xZoomedDataMin":0,"xZoomedIn":false,"duration":{"multiplier":1,"timeUnit":"Y"},"yZoomedDataMin":1,"xLambda":1,"colorOption":"3","nonSelectedAlpha":0.4,"dimensions":{"iconDimensions":["dim0"]},"yZoomedIn":false,"yAxisOption":"2","yLambda":1,"yZoomedDataMax":297082,"showTrails":false,"xZoomedDataMax":116};"uniColorForNonSelected":false,"orderedByY":false,"orderedByX":false,';
+			options['width'] = 600;
+			options['height'] = 400;
+			options['showAdvancedPanel'] = false;
+			options['showHeader'] = false;
+			options['showSelectListComponent'] = true;
+			options['showTrails'] = false;
+			options['showSidePanel'] = true;
+			options['showXMetricPicker'] = true;
+			options['showYMetricPicker'] = false;
+			options['showXScalePicker'] = false;
+			options['showYScalePicker'] = false;
+			chart.draw(data, options);
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 600px; height: 300px;"></div>
+  </body>
+</html>

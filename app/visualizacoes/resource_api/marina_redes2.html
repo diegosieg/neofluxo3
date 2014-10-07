@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Rede');
+        data.addColumn('number', 'Atualizações');
+        data.addRows(30);
+        data.setValue(0, 0, 'Twitter');
+        data.setValue(0, 1, 222);
+		data.setValue(1, 0, 'Facebook');
+       	data.setValue(1, 1, 63);
+		data.setValue(2, 0, 'Site Oficial');
+		data.setValue(2, 1, 43);
+		data.setValue(3, 0, 'Flickr');
+		data.setValue(3, 1, 326);
+		data.setValue(4, 0, 'YouTube');
+		data.setValue(4, 1, 145);	
+		
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height: 600, title: 'Marina nas Redes'});
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div"></div>
+  </body>
+</html>

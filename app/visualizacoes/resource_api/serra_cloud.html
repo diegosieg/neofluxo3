@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!-- Google API -->
+    	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/wordcumulus.js"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/swfobject.js"></script>
+
+		<script src="js/lib/jquery-1.4.2.min.js"></script>
+		<script>
+		google.load("visualization", "1");
+
+		// Set callback to run when API is loaded
+		google.setOnLoadCallback(drawCloudVisualization);
+
+		// Called when the Visualization API is loaded.
+		function drawCloudVisualization() {
+
+			// Create and populate a data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Tag');
+			data.addColumn('string', 'URL');
+			
+			data.addRows(100);
+			data.setCell(0, 0, "Serra");
+			data.setCell(1, 0, "pesquisa");
+			data.setCell(2, 0, "datafolha");
+			data.setCell(3, 0, "presidente");
+			data.setCell(4, 0, "aborto");
+			data.setCell(5, 0, "melhor");
+			data.setCell(6, 0, "careca");
+			data.setCell(7, 0, "vantagem");
+			data.setCell(8, 0, "Dilma");
+			data.setCell(9, 0, "ensino");
+			data.setCell(10, 0, "saúde");
+			data.setCell(11, 0, "basta");
+			data.setCell(12, 0, "ditadura");
+			data.setCell(13, 0, "crescimento");
+			data.setCell(14, 0, "não");
+			data.setCell(15, 0, "são paulo");
+			data.setCell(16, 0, "buraco");
+			data.setCell(17, 0, "para");
+			data.setCell(18, 0, "frio");
+			data.setCell(19, 0, "Marina");
+			data.setCell(20, 0, "Serra,");
+			data.setCell(21, 0, "erenice");
+			data.setCell(22, 0, "competência");
+			data.setCell(23, 0, "competência");
+			data.setCell(24, 0, "serra");
+			data.setCell(25, 0, "José");
+			data.setCell(26, 0, "vai");
+			data.setCell(27, 0, "tem");
+			data.setCell(28, 0, "disputa");
+			data.setCell(29, 0, "PCC");
+			data.setCell(30, 0, "Deus");
+			data.setCell(31, 0, "mais");
+			data.setCell(32, 0, "por");
+			data.setCell(33, 0, "SERRA");
+			data.setCell(34, 0, "uma");
+			data.setCell(35, 0, "pra");
+			data.setCell(36, 0, "Serra");
+			data.setCell(37, 0, "turno");
+			data.setCell(38, 0, "eu voto");
+			data.setCell(39, 0, "Dilma,");
+			data.setCell(40, 0, "Datafolha");
+			data.setCell(41, 0, "ricos");
+			data.setCell(42, 0, "acreditar");
+			data.setCell(43, 0, "polícia");
+			data.setCell(44, 0, "sonho");
+			data.setCell(45, 0, "problemas");
+			data.setCell(46, 0, "campanha");
+			data.setCell(47, 0, "foi");
+			data.setCell(48, 0, "votar");
+			data.setCell(49, 0, "guerra");
+			data.setCell(50, 0, "tucanos");
+			data.setCell(51, 0, "desvantagem");
+			data.setCell(52, 0, "marketeiros");
+			data.setCell(53, 0, "mentiu");
+			data.setCell(54, 0, "trabalhador");
+			data.setCell(55, 0, "CQC");
+			data.setCell(56, 0, "#Serra");
+			data.setCell(57, 0, "voto");
+			data.setCell(58, 0, "Brasil");
+			data.setCell(59, 0, "contra");
+			data.setCell(60, 0, "sobre");
+			data.setCell(61, 0, "escondeu");
+			data.setCell(62, 0, "cortes");
+			data.setCell(63, 0, "FHC");
+			data.setCell(64, 0, "impostos");
+			data.setCell(65, 0, "Lula");
+			data.setCell(66, 0, "censura");
+			data.setCell(67, 0, "segundo");
+			data.setCell(68, 0, "denunciar");
+			data.setCell(69, 0, "experiência");
+			data.setCell(70, 0, "agora");
+			data.setCell(71, 0, "turno");
+			data.setCell(72, 0, "vota");
+			data.setCell(73, 0, "mal");
+			data.setCell(74, 0, "#Dilma");
+			data.setCell(75, 0, "argumentos");
+			data.setCell(76, 0, "coerente");
+			data.setCell(77, 0, "#Serra45");
+			data.setCell(78, 0, "experiente");
+			data.setCell(79, 0, "45");
+			data.setCell(80, 0, "Serra");
+			data.setCell(81, 0, "democracia");
+			data.setCell(82, 0, "superfaturado");
+			data.setCell(83, 0, "governo");
+			data.setCell(84, 0, "Estado");
+			data.setCell(85, 0, "pode");
+			data.setCell(86, 0, "votos");
+			data.setCell(87, 0, "apoio");
+			data.setCell(88, 0, "partido");
+			data.setCell(89, 0, "indecisos");
+			data.setCell(90, 0, "ministro");
+			data.setCell(91, 0, "@joseserra_");
+			data.setCell(92, 0, "#Marina43");
+			data.setCell(93, 0, "#serracaluniador");
+			data.setCell(94, 0, "comedor");
+			data.setCell(95, 0, "PT");
+			data.setCell(96, 0, "muitas caras");
+			data.setCell(97, 0, "muito");
+			data.setCell(98, 0, "privatização");
+			data.setCell(99, 0, "corja"); 	
+
+			// Instantiate our table object.
+			var vis = new gviz_word_cumulus.WordCumulus(document.getElementById('content'));
+			
+			// Draw our table with the data we created locally.
+			vis.draw(data, {text_color: '#1526DB', speed: 50, width:500, height:500});
+		}
+		
+		</script>
+</head>
+<body>
+        <div id="content"></div>	
+</body>
+</html>

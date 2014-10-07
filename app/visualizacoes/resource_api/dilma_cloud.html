@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<!-- Google API -->
+    	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/wordcumulus.js"></script>
+    	<script type="text/javascript" src="http://word-cumulus-goog-vis.googlecode.com/svn/trunk/swfobject.js"></script>
+
+		<script src="js/lib/jquery-1.4.2.min.js"></script>
+		<script>
+		google.load("visualization", "1");
+
+		// Set callback to run when API is loaded
+		google.setOnLoadCallback(drawCloudVisualization);
+
+		// Called when the Visualization API is loaded.
+		function drawCloudVisualization() {
+
+			// Create and populate a data table.
+			var data = new google.visualization.DataTable();
+			data.addColumn('string', 'Tag');
+			data.addColumn('string', 'URL');
+			
+			data.addRows(100);
+	
+			data.setCell(0, 0, "Dilma");
+			data.setCell(1, 0, "Lula");
+			data.setCell(2, 0, "continuidade");
+			data.setCell(3, 0, "seguir");
+			data.setCell(4, 0, "13");
+			data.setCell(5, 0, "PT");
+			data.setCell(6, 0, "ganhar");
+			data.setCell(7, 0, "presidente");
+			data.setCell(8, 0, "povo");
+			data.setCell(9, 0, "nordeste");
+			data.setCell(10, 0, "pesquisa");
+			data.setCell(11, 0, "#Dilma13");
+			data.setCell(12, 0, "#ondavermelha");
+			data.setCell(13, 0, "votem");
+			data.setCell(14, 0, "Erenice");
+			data.setCell(15, 0, "Serra");
+			data.setCell(16, 0, "Minas");
+			data.setCell(17, 0, "Ibope");
+			data.setCell(18, 0, "Safadeza");
+			data.setCell(19, 0, "maioria");
+			data.setCell(20, 0, "paulista");
+			data.setCell(21, 0, "lidera");
+			data.setCell(22, 0, "evolução");
+			data.setCell(23, 0, "Dilma");
+			data.setCell(24, 0, "coragem");
+			data.setCell(25, 0, "Lula");
+			data.setCell(26, 0, "continuar");
+			data.setCell(27, 0, "#Dilma");
+			data.setCell(28, 0, "crescer");
+			data.setCell(29, 0, "DILMA");
+			data.setCell(30, 0, "mulher");
+			data.setCell(31, 0, "Marina");
+			data.setCell(32, 0, "forte");
+			data.setCell(33, 0, "#DilmaNão");
+			data.setCell(34, 0, "corrupção");
+			data.setCell(35, 0, "ditadura");
+			data.setCell(36, 0, "Dilma.");
+			data.setCell(37, 0, "presa");
+			data.setCell(38, 0, "Dilma");
+			data.setCell(39, 0, "honesta");
+			data.setCell(40, 0, "trabalho");
+			data.setCell(41, 0, "vitória");
+			data.setCell(42, 0, "compromisso");
+			data.setCell(43, 0, "Erenice");
+			data.setCell(44, 0, "golpe");
+			data.setCell(45, 0, "debate");
+			data.setCell(46, 0, "contra");
+			data.setCell(47, 0, "liderança");
+			data.setCell(48, 0, "Brasil");
+			data.setCell(49, 0, "aborto");
+			data.setCell(50, 0, "religião");
+			data.setCell(51, 0, "briguenta");
+			data.setCell(52, 0, "desconhecida");
+			data.setCell(53, 0, "esconde");
+			data.setCell(54, 0, "comparar");
+			data.setCell(55, 0, "conivente");
+			data.setCell(56, 0, "Deus");
+			data.setCell(57, 0, "PT");
+			data.setCell(58, 0, "debate");
+			data.setCell(59, 0, "ex-ministra");
+			data.setCell(60, 0, "companheira");
+			data.setCell(61, 0, "Dilma!");
+			data.setCell(62, 0, "Não");
+			data.setCell(63, 0, "mudando");
+			data.setCell(64, 0, "Quem");
+			data.setCell(65, 0, "segurança");
+			data.setCell(66, 0, "Serra");
+			data.setCell(67, 0, "projetos");
+			data.setCell(68, 0, "PAC");
+			data.setCell(69, 0, "Bolsa Família");
+			data.setCell(70, 0, "voto");
+			data.setCell(71, 0, "campanha");
+			data.setCell(72, 0, "governar");
+			data.setCell(73, 0, "terrorista");
+			data.setCell(74, 0, "EUA");
+			data.setCell(75, 0, "boatos");
+			data.setCell(76, 0, "#eleicoes2010");
+			data.setCell(77, 0, "agora");
+			data.setCell(78, 0, "vota");
+			data.setCell(79, 0, "hoje");
+			data.setCell(80, 0, "oculta");
+			data.setCell(81, 0, "candidata");
+			data.setCell(82, 0, "votam");
+			data.setCell(83, 0, "Rousseff");
+			data.setCell(84, 0, "amigo");
+			data.setCell(85, 0, "Casa");
+			data.setCell(86, 0, "presidenta");
+			data.setCell(87, 0, "petistas");
+			data.setCell(88, 0, "capa");
+			data.setCell(89, 0, "mulheres");
+			data.setCell(90, 0, "chefe");
+			data.setCell(91, 0, "superior");
+			data.setCell(92, 0, "TSE");
+			data.setCell(93, 0, "Dilma:");
+			data.setCell(94, 0, "brasileiros");
+			data.setCell(95, 0, "propina");
+			data.setCell(96, 0, "igual");
+			data.setCell(97, 0, "governo");
+			data.setCell(98, 0, "apoiar");
+			data.setCell(99, 0, "derrotar"); 
+			
+			// Instantiate our table object.
+			var vis = new gviz_word_cumulus.WordCumulus(document.getElementById('content'));
+			
+			// Draw our table with the data we created locally.
+			vis.draw(data, {text_color: '#ED2828', speed: 50, width:500, height:500});
+		}
+		
+		</script>
+</head>
+<body>
+        <div id="content"></div>	
+</body>
+</html>

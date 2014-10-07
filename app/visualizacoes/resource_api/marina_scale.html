@@ -1,0 +1,185 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script src="js/lib/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {'packages':['motionchart'], 'language' : 'pt_BR'});
+	  google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Palavra');
+        data.addColumn('number', '');
+        data.addColumn('number', 'Ordem: ocorrências');
+        data.addColumn('string', 'Fonte');
+      
+      var rows = "";
+	  	
+    	data.addRows([
+			["hoje",2010,19766,"Fontes Oficiais"] 
+			,["Marina",2010,15610,"Fontes Oficiais"] 
+			,["brasil",2010,8434,"Fontes Oficiais"] 
+			,["silva",2010,5177,"Fontes Oficiais"] 
+			,["#marina43",2010,4708,"Fontes Oficiais"] 
+			,["debate",2010,4512,"Fontes Oficiais"] 
+			,["onda verde",2010,3384,"Fontes Oficiais"] 
+			,["vamos",2010,3117,"Fontes Oficiais"] 
+			,["nacional",2010,2124,"Fontes Oficiais"] 
+			,["PV",2010,2116,"Fontes Oficiais"] 
+			,["MG",2010,1241,"Fontes Oficiais"] 
+			,["política",2010,1222,"Fontes Oficiais"] 
+			,["candidata",2010,914,"Fontes Oficiais"] 
+			,["segundo turno",2010,868,"Fontes Oficiais"] 
+			,["segundo turno",2010,441,"Fontes Oficiais"] 
+			,["humanos",2010,336,"Fontes Oficiais"] 
+			,["compromisso",2010,211,"Fontes Oficiais"] 
+			,["termo",2010,137,"Fontes Oficiais"] 
+			,["mobilizacao",2010,2,"Fontes Oficiais"] 
+			,["onda verde",2010,1784,"TV"] 
+			,["segundo turno",2010,1257,"TV"] 
+			,["marina presidente",2010,821,"TV"] 
+			,["sou marina",2010,170,"TV"] 
+			,["2º turno",2010,77,"TV"] 
+			,["cresce",2010,73,"TV"] 
+			,["Acre",2010,42,"TV"] 
+			,["pesquisa",2010,15,"TV"] 
+			,["debate",2010,8,"TV"] 
+			,["selva",2010,3,"TV"] 
+			,["sonho",2010,3,"TV"] 
+			,["jovem",2010,3,"TV"] 
+			,["esperanca",2010,2,"TV"] 
+			,["mudar",2010,10,"TV"] 
+			,["segundo lugar",2010,10,"TV"] 
+			,["honestidade",2010,10,"TV"] 
+			,["crescimento nas pesquisas",2010,1,"TV"] 
+			,["consciência",2010,10,"TV"]
+			,["Marina",2010,84332,"Tweets"]
+			,["OndaVerde",2010,63176,"Tweets"]
+			,["PV",2010,54809,"Tweets"]
+			,["debate",2010,44364,"Tweets"]
+			,["honestidade",2010,43810,"Tweets"]
+			,["verdadeira",2010,35796,"Tweets"]
+			,["mulher",2010,31261,"Tweets"]
+			,["Deus",2010,25456,"Tweets"]
+			,["Vai Marina",2010,24321,"Tweets"]
+			,["segundo turno",2010,23835,"Tweets"]
+			,["reforma",2010,22646,"Tweets"]
+			,["Dilma",2010,20685,"Tweets"]
+			,["discurso",2010,20042,"Tweets"]
+			,["presidente",2010,19580,"Tweets"]
+			,["governo",2010,19114,"Tweets"]
+			,["Serra",2010,19011,"Tweets"]
+			,["Silva",2010,17728,"Tweets"]
+			,["vamos marina",2010,14704,"Tweets"]
+			,["marina",2010,14501,"Tweets"]
+			,["prefiro",2010,14370,"Tweets"]
+			,["#Marina43",2010,13384,"Tweets"]
+			,["verde",2010,12099,"Tweets"]
+			,["conquistou",2010,12053,"Tweets"]
+			,["#marina43",2010,11061,"Tweets"]
+			,["Plínio",2010,9639,"Tweets"]
+			,["vai",2010,9465,"Tweets"]
+			,["MARINA",2010,9104,"Tweets"]
+			,["reflitam",2010,8885,"Tweets"]
+			,["votar",2010,8448,"Tweets"]
+			,["votam",2010,8282,"Tweets"]
+			,["subindo",2010,8000,"Tweets"]
+			,["pesquisas",2010,7762,"Tweets"]
+			,["urnas",2010,7662,"Tweets"]
+			,["consciência",2010,7189,"Tweets"]
+			,["Dilma,",2010,7020,"Tweets"]
+			,["Marina,",2010,6991,"Tweets"]
+			,["séria",2010,6940,"Tweets"]
+			,["crescer",2010,6938,"Tweets"]
+			,["linda",2010,6734,"Tweets"]
+			,["ultrapassar",2010,6641,"Tweets"]
+			,["pontos",2010,6440,"Tweets"]
+			,["sobe",2010,6435,"Tweets"]
+			,["história",2010,6358,"Tweets"]
+			,["quem",2010,6110,"Tweets"]
+			,["@silva_marina",2010,6077,"Tweets"]
+			,["43",2010,6036,"Tweets"]
+			,["voto",2010,6021,"Tweets"]
+			,["Serra,",2010,5992,"Tweets"]
+			,["turno",2010,5785,"Tweets"]
+			,["segundo",2010,5587,"Tweets"]
+			,["mesmo",2010,5055,"Tweets"]
+			,["#debate",2010,4870,"Tweets"]
+			,["desempenho",2010,4869,"Tweets"]
+			,["escola",2010,4859,"Tweets"]
+			,["terra",2010,4812,"Tweets"]
+			,["turno",2010,4797,"Tweets"]
+			,["vota",2010,4737,"Tweets"]
+			,["#ondaverde",2010,4537,"Tweets"]
+			,["coerência",2010,4506,"Tweets"]
+			,["mulher",2010,4194,"Tweets"]
+			,["capital",2010,4169,"Tweets"]
+			,["DF",2010,4048,"Tweets"]
+			,["Marina",2010,3984,"Tweets"]
+			,["autoridade",2010,3959,"Tweets"]
+			,["admiro",2010,3945,"Tweets"]
+			,["amazônia",2010,3919,"Tweets"]
+			,["Sábios",2010,3890,"Tweets"]
+			,["surpreender",2010,3887,"Tweets"]
+			,["divulguue",2010,3741,"Tweets"]
+			,["confio",2010,3727,"Tweets"]
+			,["Ministério",2010,3637,"Tweets"]
+			,["presidente",2010,3630,"Tweets"]
+			,["politicamente",2010,3629,"Tweets"]
+			,["censura",2010,3603,"Tweets"]
+			,["Evangelho",2010,3512,"Tweets"]
+			,["2º",2010,3496,"Tweets"]
+			,["liderando",2010,3374,"Tweets"]
+			,["aborto",2010,3372,"Tweets"]
+			,["futuro",2010,3295,"Tweets"]
+			,["Brasil",2010,3291,"Tweets"]
+			,["fervorosamente",2010,3234,"Tweets"]
+			,["votei",2010,3230,"Tweets"]
+			,["Mais Marina",2010,3196,"Tweets"]
+			,["desmatamento",2010,3120,"Tweets"]
+			,["evangélicos",2010,3035,"Tweets"]
+			,["@apoiomarina",2010,2977,"Tweets"]
+			,["presidente,",2010,2934,"Tweets"]
+			,["votos",2010,2917,"Tweets"]
+			,["religião",2010,2823,"Tweets"]
+			,["defesa",2010,2821,"Tweets"]
+			,["postura",2010,2805,"Tweets"]
+			,["trabalho",2010,2778,"Tweets"]
+			,["discurso",2010,2749,"Tweets"]
+			,["seca",2010,2710,"Tweets"]
+			,["maquiagem",2010,2657,"Tweets"]
+			,["avatar",2010,2630,"Tweets"]
+			,["ricos",2010,2627,"Tweets"]
+			,["defesa",2010,2557,"Tweets"]
+			,["votaria",2010,2552,"Tweets"]
+			,["maior",2010,2551,"Tweets"]
+    	    ]);
+
+
+    	
+        var chart = new google.visualization.MotionChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 600, height:300});
+
+		var options ={};
+			options['state'] = '{"iconKeySettings":[],"stateVersion":3,"time":"notime","xAxisOption":"_ALPHABETICAL","playDuration":15000,"iconType":"BUBBLE","sizeOption":"2","xZoomedDataMin":0,"xZoomedIn":false,"duration":{"multiplier":1,"timeUnit":"Y"},"yZoomedDataMin":1,"xLambda":1,"colorOption":"3","nonSelectedAlpha":0.4,"dimensions":{"iconDimensions":["dim0"]},"yZoomedIn":false,"yAxisOption":"2","yLambda":1,"yZoomedDataMax":297082,"showTrails":false,"xZoomedDataMax":116};"uniColorForNonSelected":false,"orderedByY":false,"orderedByX":false,';
+			options['width'] = 600;
+			options['height'] = 400;
+			options['showAdvancedPanel'] = false;
+			options['showHeader'] = false;
+			options['showSelectListComponent'] = true;
+			options['showTrails'] = false;
+			options['showSidePanel'] = true;
+			options['showXMetricPicker'] = true;
+			options['showYMetricPicker'] = false;
+			options['showXScalePicker'] = false;
+			options['showYScalePicker'] = false;
+			chart.draw(data, options);
+
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="chart_div" style="width: 600px; height: 300px;"></div>
+  </body>
+</html>
