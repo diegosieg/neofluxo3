@@ -192,7 +192,8 @@ textarea {
     padding-bottom: 50px;
 }
 
-.boxes {
+.boxes,
+.boxes2 {
     height: auto;
     min-height: 255px;
     background: #3498db;
@@ -201,14 +202,15 @@ textarea {
     display: block;
     color: #fbfbfb;
 }
-/*.boxes2{
-    height: 120px;
+.boxes2{
+    min-height: 120px;
 }
-.boxes3{
+/*.boxes3{
     height: 120px;
     margin-bottom: 50px;
 }*/
-.boxes:hover {
+.boxes:hover,
+.boxes2:hover  {
  background: #2980b9;
  color:#bdc3c7;
  -webkit-transition: all 0.5s linear;
@@ -270,11 +272,9 @@ text-align: center;
 .box-context,
 .box-team,
 .box-visualization {
-    width: 100%;
     height: auto;
     background: #16a085;
     padding-bottom: 20px;
-    float: left;
 }
 .box-project{
     background:#95a5a6;
@@ -287,19 +287,7 @@ text-align: center;
     background: #ecf0f1;
 }
 
-.box-text,
-.box-text2{
-    margin-left: 50px;
-    width: 70%;
-    float:left;
-}
-.box-text2{
-    width: 90%;
-}
-.box-img{
-    width: 20%;
-    float:left;
-}
+
 .title{
     padding-top: 20px;
     color: #2c3e50;
@@ -341,8 +329,7 @@ text-align: center;
     color: #fbfbfb;
     text-align: justify;
 }
-.members{
-    width: 100%;
+.members {
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -351,13 +338,13 @@ text-align: center;
 .ft-member{
     float: left;
     margin-right: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
 .func{
     font-size: 1em;
     color: #ecf0f1;
-    margin-bottom: -25px;
+    margin-bottom: -15px;
 }
 .name{
     font-size: 1.5em;
@@ -448,17 +435,15 @@ float: right;
      transition: all 0.5s linear;
 }
 .box-visu-types{
-    width: 20%;
     margin-top: 40px;
-    margin-right: 10px;
-    height: 200px;
-    float: left;
+    margin-bottom: 50px;
 }
 .visu-list{
     margin-left: 50px;
 }
 .item-list{
     list-style: none;
+    margin-left: -40px;
 }
 .box-nav-visu{
     width: 30%;
@@ -541,27 +526,11 @@ line-height: 4em;
 .tela-menor{
     font-size: 0.5em !important;
 }
-.box-text2 {
-width: 70%;
-}
-.title{
-    width: 70%;
-}
-.title2{
-    width: 100%;
-}
-.img {
-margin-left: 0px;
-margin-top: 0px;
-width: 440%;
-}
 .box-api-cadastro{
     margin-left: 0%;
-    width: 280px;
 }
 .box-code{
     float: none;
-    width: 200px;
     height: 100px;
     padding-top: 0px;
     padding-left: 80px;
@@ -569,7 +538,10 @@ width: 440%;
 .icons-code, .icons-code-2 {
     font-size: 6em;
 }
-
+.text-api{
+    font-family: monospace;
+    font-size: 0.7em;
+}
 .footer{
     height: auto;
     background: #2c3e50;

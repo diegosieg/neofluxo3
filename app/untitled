@@ -36,60 +36,20 @@
         </ul>
     </nav>
 
+    <a href="#">
+        <nav class="back-menu hidden">
+            <span class="icons-arrow-up-alt1 back-top"></span>
+        </nav>
+    </a>
+
     <header class="col-md-12 head">
             <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
     </header>
 
-    <section id="main" class="main col-md-12">
+    <section id="main3" class="main col-md-12">
         <div class="container">
             <div class="row">
-                 <a href="fase-um.html">
-                        <div class="col-xs-12 col-md-3 boxes box-vis1">
-                            <div class="icons-stats"></div>
-                            <h2 class="sub-title">Visualizações da primeira fase</h2>
-                        </div>
-                </a>
 
-                <a href="http://www.tecccog.net/" target="_blank">
-                        <div class="col-xs-12 col-md-3 boxes box-sem">
-                            <div class="icons-earth"></div>
-                            <h2 class="sub-title">Seminário dos pesquisadores</h2>
-                        </div>
-                </a>
-
-                <a href="publicacoes.html">
-                        <div class="col-xs-12 col-md-3 boxes box-pub">
-                            <div class="icons-books"></div>
-                            <h2 class="sub-title">Nossas publicações</h2>
-                        </div>
-                </a>
-
-                <a href="fase-dois.html">
-                        <div class="col-xs-12 col-md-3 boxes box-res">
-                            <div class="icons-newspaper"></div>
-                            <h2 class="sub-title">Resultados da segunda fase</h2>
-                        </div>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section class="partners col-md-12">
-        <div class="row">
-            <div class="info-foo">
-                    <div class="col-md-4 fomento">
-                        <h3 class="title-foo">Fomento:</h3>
-                        <a href="http://lattes.cnpq.br/"><img src="images/cnpq.png" alt="logo cnpq"></a>
-                    </div>
-
-                    <div class="col-md-4 apoio">
-                        <h3 class="title-foo">Apoio:</h3>
-                        <a href="http://www.metodista.br/"><img src="images/metodista.png" alt="logo metodista"></a>
-                    </div>
-
-                    <div class="col-md-4 realiza">
-                        <h3 class="title-foo">Realização:</h3>
-                        <a href="http://www.tecccog.net/"><img src="images/tec.png" alt="logo teccog"></a>
-                    </div>
             </div>
         </div>
     </section>

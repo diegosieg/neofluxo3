@@ -1,26 +1,33 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>NeoFluxo</title>
+        <title>neofluxo3</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">Você está usando um browser <strong>antigo</strong>. Por favor, <a href="http://browsehappy.com/">faça um upgrade</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Google Chrome Frame</a> para melhorar a sua experiência de navegação.</p>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<div class="row-fluid">
-    <nav class="menu">
+<div class="container-fluid">
+
+    <nav class="col-md-12 menu">
         <ul>
             <li class="item-menu"><a href="index.html" class="links-menu">Neofluxo</a></li>
             <li class="item-menu"><a href="fase-um.html" class="links-menu">Primeira fase</a></li>
@@ -28,50 +35,59 @@
             <li class="item-menu"><a href="api.html" class="links-menu">API</a></li>
         </ul>
     </nav>
-    <a href="#">
-        <nav class="back-menu hidden">
-            <span class="icons-arrow-up-alt1 back-top"></span>
-        </nav>
-    </a>
-    <header class="head">
-            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+
+    <header class="col-md-12 head">
+            <h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></h1>
     </header>
 
-        <div class="title-page">
-            <h1 class="title title2">Conheça a nossa API</h1>
-            <a href="api-cadastro.html"><div class="btn">Cadastre-se para usar</div></a>
+    <section class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <div class="title-page">
+                    <h1 class="title title2">Conheça a nossa API</h1>
+                    <a href="api-cadastro.html"><div class="btn">Cadastre-se para usar</div></a>
+                </div>
+            </div>
         </div>
-
-    <section id="main2" class="content limit">
-
-         <a href="#">
-                <div class="boxes2 box-vis1 context-link">
-                    <h2 class="sub-title">Plataforma aberta</h2>
-                </div>
-        </a>
-
-        <a href="#">
-                <div class="boxes2 box-sem project-link">
-                    <h2 class="sub-title">Banco de dados</h2>
-                </div>
-        </a>
-
-        <a href="#">
-                <div class="boxes2 box-res result-link">
-                    <h2 class="sub-title">Política de API</h2>
-                </div>
-        </a>
-
-        <a href="#">
-                <div class="boxes2 box-pub team-link">
-                    <h2 class="sub-title">Documentação</h2>
-                </div>
-        </a>
-
     </section>
 
-    <section class="box-context" id="context">
-                        <div class="box-text">
+
+
+
+    <section id="main2" class="main col-md-12">
+        <div class="container">
+            <div class="row">
+                 <a href="#">
+                        <div class="boxes2 col-xs-12 col-md-3">
+                            <h2 class="sub-title">Plataforma aberta</h2>
+                        </div>
+                </a>
+
+                <a href="#">
+                        <div class="boxes2 col-xs-12 col-md-3">
+                            <h2 class="sub-title">Banco de dados</h2>
+                        </div>
+                </a>
+
+                <a href="#">
+                        <div class="boxes2 col-xs-12 col-md-3">
+                            <h2 class="sub-title">Política de API</h2>
+                        </div>
+                </a>
+
+                <a href="#">
+                        <div class="boxes2 col-xs-12 col-md-3">
+                            <h2 class="sub-title">Documentação</h2>
+                        </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-md-12 box-context" id="context">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
                     <h1 class="title">Plataforma aberta</h1>
                     <h2 class="sub-title2">Por que ser aberto?</h2>
                     <p class="text-proj">
@@ -87,86 +103,94 @@
                         Permitir a criação de aplicativos e o acesso de dados, de modo a estender as funcionalidades de um sistema e contribuir para sua melhoria, é algo comum em ferramentas como o Twitter e Facebook, mas ainda é pouco explorado pela área da comunicação - que já podem aproveitar bases de dados disponíveis da mesma forma pelo jornal britâncio The Guardian (www.guardian.co.uk/data-store) ou pelo Governo dos EUA (www.data.gov). Longe de se posicionar como pioneiro no Brasil, o projeto NeoFluxo espera ser uma entre inúmeras iniciativas similares no país.
                     </p>
                 </div>
-                <div class="box-img">
-                    <img src="img/aberta.png" alt="aberta" class="img img2">
+                <div class="col-md-2 col-xs-12">
+                    <img src="images/aberta.png" alt="aberta" class="img-responsive">
                 </div>
-    </section>
-
-    <section class="box-project" id="project">
-        <div class="box-text">
-                    <h1 class="title">Banco de dados</h1>
-                    <h2 class="sub-title2">Conheça todos os nossos bancos de dados disponíveis</h2>
-                    <p class="text">
-                        Durante o primeiro e segundo turnos das eleições presidenciais, o sistema NeoFluxo coletou dados de fontes oficiais e menções específicas no Twitter. Estes foram organizados em bancos de dados diferentes, todas acessíveis a partir de uma API, o que permite a qualquer desenvolvedor criar e visualizar possíveis relações entre elas.
-                   </p>
-                    <p class="text">
-                        <strong>Dados coletados a partir dos Canais Oficiais:</strong>
-                    </p>
-                    <p class="text">
-                        - Todas as atualizações provenientes dos canais oficiais dos candidatos Dilma Rouseff e José Serra, na Internet, a partir do Twitter, Facebook, YouTube, Flickr e site oficial (sem filtro);
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 11/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text-proj">
-                        :: Segundo turno: entre 08/10/2010 e 29/10/2010
-                    </p>
-                    <p class="text">
-                        - Todas as atualizações provenientes dos canais oficiais da candidata Marina Silva, na Internet, a partir do Twitter, Facebook, YouTube, Flickr e site oficial (sem filtro);
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 23/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text">
-                        <strong>Dados coletados apenas no Twitter:</strong>
-                    </p>
-                    <p class="text">
-                        - Todas as mensagens globais do Twitter, contendo as palavras "dilma" e "serra" (tabelas separadas).
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 11/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text-proj">
-                        :: Segundo turno: entre 08/10/2010 e 29/10/2010
-                    </p>
-                    <p class="text">
-                        - Todas as mensagens globais do Twitter, contendo uma ou mais palavras-chave (geradas de maneira automatizadas) a partir dos Canais Oficiais dos candidatos Dilma Rousseff e José Serra. As tabelas, separadas para cada candidato, contém sub-tabelas divididas por dias (os mesmos dias dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas.
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 11/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text-proj">
-                        :: Segundo turno: entre 08/10/2010 e 29/10/2010
-                    </p>
-                    <p class="text">
-                        - Todas as mensagens globais do Twitter, contendo uma ou mais palavras-chave (geradas de maneira automatizadas) a partir dos Canais Oficiais da candidata Marina Silva. As tabelas, separadas para cada candidato, contém sub-tabelas divididas por dias (os mesmos dias dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas.
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 23/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text">
-                        - Todas as mensagens globais do Twitter, contendo uma ou mais das palavras-chave (geradas de maneira manual a partir horários eleitorais) dos candidatos Dilma Rousseff e José Serra. As tabelas, separadas por candidato, contém sub-tabelas divididas por dias (criadas após a exibição de cada dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas de acordo com a metodologia definida previamente.
-                    </p>
-                    <p class="text-proj">
-                        :: Primeiro turno: entre 11/09/2010 e 03/10/2010
-                    </p>
-                    <p class="text-proj">
-                        :: Segundo turno: entre 08/10/2010 e 29/10/2010
-                    </p>
-                    <p class="text">
-                        - Todas as mensagens globais do Twitter, contendo uma ou mais das palavras-chave (geradas de maneira manual) a partir dos temas relacionados a cobertura da campanha eleitoral feita pelos quatro principais portais brasileiros (Uol, Terra, Ig e G1), num limite de 5 (cinco) termos diários, de acordo com a metodologia definida previamente.
-                    </p>
-                    <p class="text-proj">
-                        :: Segundo turno: entre 08/10/2010 e 29/10/2010
-                    </p>
+            </div>
         </div>
-                <div class="box-img">
-                    <img src="img/banco.png" alt="database" class="img">
-                </div>
     </section>
 
-    <section class="box-visualization" id="result">
-                <div class="box-text">
+    <section class="col-md-12 box-project" id="project">
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-10 col-xs-12">
+                                <h1 class="title">Banco de dados</h1>
+                                <h2 class="sub-title2">Conheça todos os nossos bancos de dados disponíveis</h2>
+                                <p class="text">
+                                    Durante o primeiro e segundo turnos das eleições presidenciais, o sistema NeoFluxo coletou dados de fontes oficiais e menções específicas no Twitter. Estes foram organizados em bancos de dados diferentes, todas acessíveis a partir de uma API, o que permite a qualquer desenvolvedor criar e visualizar possíveis relações entre elas.
+                               </p>
+                                <p class="text">
+                                    <strong>Dados coletados a partir dos Canais Oficiais:</strong>
+                                </p>
+                                <p class="text">
+                                    - Todas as atualizações provenientes dos canais oficiais dos candidatos Dilma Rouseff e José Serra, na Internet, a partir do Twitter, Facebook, YouTube, Flickr e site oficial (sem filtro);
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 11/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text-proj">
+                                    :: Segundo turno: entre 08/10/2010 e 29/10/2010
+                                </p>
+                                <p class="text">
+                                    - Todas as atualizações provenientes dos canais oficiais da candidata Marina Silva, na Internet, a partir do Twitter, Facebook, YouTube, Flickr e site oficial (sem filtro);
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 23/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text">
+                                    <strong>Dados coletados apenas no Twitter:</strong>
+                                </p>
+                                <p class="text">
+                                    - Todas as mensagens globais do Twitter, contendo as palavras "dilma" e "serra" (tabelas separadas).
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 11/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text-proj">
+                                    :: Segundo turno: entre 08/10/2010 e 29/10/2010
+                                </p>
+                                <p class="text">
+                                    - Todas as mensagens globais do Twitter, contendo uma ou mais palavras-chave (geradas de maneira automatizadas) a partir dos Canais Oficiais dos candidatos Dilma Rousseff e José Serra. As tabelas, separadas para cada candidato, contém sub-tabelas divididas por dias (os mesmos dias dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas.
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 11/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text-proj">
+                                    :: Segundo turno: entre 08/10/2010 e 29/10/2010
+                                </p>
+                                <p class="text">
+                                    - Todas as mensagens globais do Twitter, contendo uma ou mais palavras-chave (geradas de maneira automatizadas) a partir dos Canais Oficiais da candidata Marina Silva. As tabelas, separadas para cada candidato, contém sub-tabelas divididas por dias (os mesmos dias dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas.
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 23/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text">
+                                    - Todas as mensagens globais do Twitter, contendo uma ou mais das palavras-chave (geradas de maneira manual a partir horários eleitorais) dos candidatos Dilma Rousseff e José Serra. As tabelas, separadas por candidato, contém sub-tabelas divididas por dias (criadas após a exibição de cada dos programas eleitorais televisivos), onde cada uma dessas sub-tabelas possui 10 (dez) palavras-chave relacionadas de acordo com a metodologia definida previamente.
+                                </p>
+                                <p class="text-proj">
+                                    :: Primeiro turno: entre 11/09/2010 e 03/10/2010
+                                </p>
+                                <p class="text-proj">
+                                    :: Segundo turno: entre 08/10/2010 e 29/10/2010
+                                </p>
+                                <p class="text">
+                                    - Todas as mensagens globais do Twitter, contendo uma ou mais das palavras-chave (geradas de maneira manual) a partir dos temas relacionados a cobertura da campanha eleitoral feita pelos quatro principais portais brasileiros (Uol, Terra, Ig e G1), num limite de 5 (cinco) termos diários, de acordo com a metodologia definida previamente.
+                                </p>
+                                <p class="text-proj">
+                                    :: Segundo turno: entre 08/10/2010 e 29/10/2010
+                                </p>
+                    </div>
+                    <div class="col-md-2 col-xs-12">
+                        <img src="images/banco.png" alt="database" class="img-responsive">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="col-md-12 box-visualization" id="result">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
                     <h1 class="title">Política de API</h1>
                     <h2 class="sub-title2">Termos e Condições de Uso</h2>
                     <p class="text-proj"><strong>1. APIs do NeoFluxo</strong></p>
@@ -196,85 +220,112 @@
                     <p class="text-proj"><strong>5. Contato</strong></p>
                     <p class="text-proj">(A) Por favor, entre em contato conosco pelo email walterlima@pq.cnpq.br, se você quiser discutir qualquer aspecto dos Termos e Condições de Uso.</p>
                 </div>
-                <div class="box-img">
-                    <img src="img/politica.png" alt="politica" class="img">
+                <div class="col-md-2 col-xs-12">
+                    <img src="images/politica.png" alt="politica" class="img-responsive">
                 </div>
-    </section>
-
-    <section class="box-team" id="team">
-            <div class="box-text">
-                <h1 class="title">Documentação para desenvolvedores</h1>
-                <p class="text">Todos os dados da API estão disponíveis nos formatos XML e JSON. Para usá-los, é preciso concordar com seus termos de uso antes de obter uma chave de uso.</p>
-                <p class="text">Exemplos de chamadas:</p>
-
-                <p class="text"><strong>Tópicos</strong></p>
-                <p class="text">:: Lista tópicos (candidato)</p>
-                <p class="text-api">api.neofluxo.net/topics.format</p>
-
-                <p class="text">:: Detalhes de um tópico (candidato)</p>
-                <p class="text-api">api.neofluxo.net/topics/id.format</p>
-
-                <p class="text"><strong>Campanhas</strong></p>
-                <p class="text">:: Lista campanhas de um tópico (candidato)</p>
-                <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns.format</p>
-                <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns.format?date=2010-10-26</p>
-
-                <p class="text">:: Detalhes de uma campanha</p>
-                <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns/id.format</p>
-
-                <p class="text"><strong>Tweets</strong></p>
-                <p class="text">:: Lista tweets associados a um termo (por id ou nome do termo)</p>
-                <p class="text-api">api.neofluxo.net/terms/id/tweets.format</p>
-                <p class="text-api">api.neofluxo.net/terms/name/tweets.format</p>
-
-                <p class="text"><strong>Entries</strong></p>
-                <p class="text">:: Lista mensagens oficiais de um tópico (candidato)</p>
-                <p class="text-api">api.neofluxo.net/topics/topic_id/entries.format</p>
-
-                <p class="text"><strong>Busca</strong></p>
-                <p class="text-api">api.neofluxo.net/search/index.format?q=keyword</p>
             </div>
-                <div class="box-img">
-                    <img src="img/terminal.png" alt="terminal" class="img">
-                </div>
+        </div>
     </section>
 
-    <footer class="footer">
-        <div class="info-foo">
-                <div class="fomento">
-                    <h3 class="title-foo">Fomento:</h3>
-                    <a href="http://lattes.cnpq.br/"><img src="img/cnpq.png" alt="logo cnpq"></a>
-                </div>
+    <section class="col-md-12 box-team" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-xs-12">
+                    <h1 class="title">Documentação para desenvolvedores</h1>
+                    <p class="text">Todos os dados da API estão disponíveis nos formatos XML e JSON. Para usá-los, é preciso concordar com seus termos de uso antes de obter uma chave de uso.</p>
+                    <p class="text">Exemplos de chamadas:</p>
 
-                <div class="apoio">
-                    <h3 class="title-foo">Apoio:</h3>
-                    <a href="http://www.metodista.br/"><img src="img/metodista.png" alt="logo metodista"></a>
-                </div>
+                    <p class="text"><strong>Tópicos</strong></p>
+                    <p class="text">:: Lista tópicos (candidato)</p>
+                    <p class="text-api">api.neofluxo.net/topics.format</p>
 
-                <div class="realiza">
-                    <h3 class="title-foo">Realização:</h3>
-                    <a href="http://www.tecccog.net/"><img src="img/tec.png" alt="logo teccog"></a>
-                </div>
+                    <p class="text">:: Detalhes de um tópico (candidato)</p>
+                    <p class="text-api">api.neofluxo.net/topics/id.format</p>
 
-                <div class="social">
+                    <p class="text"><strong>Campanhas</strong></p>
+                    <p class="text">:: Lista campanhas de um tópico (candidato)</p>
+                    <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns.format</p>
+                    <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns.format?date=2010-10-26</p>
+
+                    <p class="text">:: Detalhes de uma campanha</p>
+                    <p class="text-api">api.neofluxo.net/topics/topic_id/campaigns/id.format</p>
+
+                    <p class="text"><strong>Tweets</strong></p>
+                    <p class="text">:: Lista tweets associados a um termo (por id ou nome do termo)</p>
+                    <p class="text-api">api.neofluxo.net/terms/id/tweets.format</p>
+                    <p class="text-api">api.neofluxo.net/terms/name/tweets.format</p>
+
+                    <p class="text"><strong>Entries</strong></p>
+                    <p class="text">:: Lista mensagens oficiais de um tópico (candidato)</p>
+                    <p class="text-api">api.neofluxo.net/topics/topic_id/entries.format</p>
+
+                    <p class="text"><strong>Busca</strong></p>
+                    <p class="text-api">api.neofluxo.net/search/index.format?q=keyword</p>
+                </div>
+                <div class="col-md-2 col-xs-12">
+                    <img src="images/terminal.png" alt="terminal" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="col-xs-12 col-md-12 footer">
+        <div class="container">
+                <div class="col-md-6 col-xs-12 social">
                     <h3 class="title-foo">Conecte-se:</h3>
-                    <a href="https://www.facebook.com/pages/NeoFluxo/152867231423593"><img src="img/facebook.png" alt="facebook" width="60" height="60"></a>
-                    <a href="http://www.twitter.com/neofluxo"><img src="img/twitter.png" alt="twitter" width="60" height="60"></a>
-                    <a href="https://github.com/diegosieg/neofluxo/"><img src="img/github.png" alt="github" width="60" height="60"></a>
-                    <a href="mailto:walterlima@pq.cnpq.br"><img src="img/mail.png" alt="email" width="60" height="60"></a>
+                    <a href="https://www.facebook.com/pages/NeoFluxo/152867231423593"><img src="images/facebook.png" alt="facebook" width="60" height="60"></a>
+                    <a href="http://www.twitter.com/neofluxo"><img src="images/twitter.png" alt="twitter" width="60" height="60"></a>
+                    <a href="https://github.com/diegosieg/neofluxo3/"><img src="images/github.png" alt="github" width="60" height="60"></a>
+                    <a href="mailto:walterlima@pq.cnpq.br"><img src="images/mail.png" alt="email" width="60" height="60"></a>
                 </div>
-                <div class="license">
+                <div class="col-md-4 col-xs-12 language">
+                    <h3 class="title-foo">Other languages:</h3>
+                    <a href="en/index.php"><img src="images/eng.jpg" width="20" height="15"></a>
+                </div>
+                <div class="col-md-2 col-xs-12 license">
+                    <h3 class="title-foo">Licença:</h3>
                     <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/br/"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
                 </div>
         </div>
     </footer>
 </div>
 
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
 
-    </body>
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../bower_components/bootstrap/js/button.js"></script>
+        <script src="../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
 </html>
