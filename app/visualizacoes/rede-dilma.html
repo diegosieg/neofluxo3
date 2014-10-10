@@ -1,87 +1,144 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>NeoFluxo</title>
+        <title>neofluxo3</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/main.css">
-        <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="shortcut icon" href="../favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="../styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">Você está usando um browser <strong>antigo</strong>. Por favor, <a href="http://browsehappy.com/">faça um upgrade</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">ative o Google Chrome Frame</a> para melhorar a sua experiência de navegação.</p>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-<div class="row-fluid">
-    <nav class="menu">
-        <ul>
-            <li class="item-menu"><a href="../index.html" class="links-menu">Neofluxo</a></li>
-            <li class="item-menu"><a href="../fase-um.html" class="links-menu">Primeira fase</a></li>
-            <li class="item-menu"><a href="fase-dois.html" class="links-menu">Segunda fase</a></li>
-            <li class="item-menu"><a href="api.html" class="links-menu">API</a></li>
-        </ul>
-    </nav>
-    <header class="head">
-            <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
+<div class="container-fluid">
+
+<nav class="navbar navbar-default menu" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="item-menu"><a href="../index.html" class="links-menu">Neofluxo</a></li>
+        <li class="item-menu"><a href="../fase-um.html" class="links-menu">Primeira fase</a></li>
+        <li class="item-menu"><a href="../fase-dois.html" class="links-menu">Segunda fase</a></li>
+        <li class="active item-menu"><a href="../resultados-um.html" class="links-menu">Visualizações</a></li>
+        <li class="item-menu"><a href="../publicacoes.html" class="links-menu">Publicações</a></li>
+        <li class="item-menu"><a href="../api.html" class="links-menu">API</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+    <a href="#">
+        <nav class="back-menu hidden">
+            <span class="icons-arrow-up-alt1 back-top"></span>
+        </nav>
+    </a>
+
+    <header class="col-md-12 head">
+            <h1 class="logo"><a href="index.html"><img src="../images/logo.png" alt="logo"></a></h1>
     </header>
-    <nav class="navig">
 
-    </nav>
+    <section id="main3" class="main col-md-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h1 class="title2-center">Redes Sociais - Dilma</h1>
 
-    <section id="main3" class="content limit">
-        <div class="box-publi">
-            <h1 class="title2">Redes Sociais - Dilma</h1>
+                    <div class="box-nav-visu col-md-12">
+                            <a class="nav-visu" href="nuvem-serra.html"><i class="icons-arrow-left-alt2"></i></a>
+                            <a class="nav-visu" href="../resultados-um.html"><i class="icons-arrow-down-alt1"></i></a>
+                            <a class="nav-visu" href="rede-marina.html"><i class="icons-arrow-right-alt1"></i></a>
+                    </div>
+                    <div class="box-visu col-md-12">
+                            <iframe src="resource_api/dilma_redes.html" width="800" height="630" ></iframe>
+                    </div>
 
-            <div class="box-nav-visu">
-                    <a href="graf-serra.html"><div class="back nav-visu icons-arrow-left-alt2"></div></a>
-                    <a href="../resultados-um.html"><div class="back nav-visu icons-arrow-down-alt1"></div></a>
-                    <a href="rede-marina.html"><div class="back nav-visu icons-arrow-right-alt1"></div></a>
+                </div>
             </div>
-
-            <iframe src="resource_api/dilma_redes.html" width="1050" height="650" ></iframe>
-
         </div>
     </section>
 
-
-    <footer class="footer">
-        <div class="info-foo">
-                <div class="fomento">
-                    <h3 class="title-foo">Fomento:</h3>
-                    <a href="http://lattes.cnpq.br/"><img src="../img/cnpq.png" alt="logo cnpq"></a>
-                </div>
-
-                <div class="apoio">
-                    <h3 class="title-foo">Apoio:</h3>
-                    <a href="http://www.metodista.br/"><img src="../img/metodista.png" alt="logo metodista"></a>
-                </div>
-
-                <div class="realiza">
-                    <h3 class="title-foo">Realização:</h3>
-                    <a href="http://www.tecccog.net/"><img src="../img/tec.png" alt="logo teccog"></a>
-                </div>
-
-                <div class="social">
+    <footer class="col-xs-12 col-md-12 footer">
+        <div class="container">
+                <div class="col-md-6 col-xs-12 social">
                     <h3 class="title-foo">Conecte-se:</h3>
-                    <a href="https://www.facebook.com/pages/NeoFluxo/152867231423593"><img src="../img/facebook.png" alt="facebook" width="60" height="60"></a>
-                    <a href="http://www.twitter.com/neofluxo"><img src="../img/twitter.png" alt="twitter" width="60" height="60"></a>
-                    <a href="https://github.com/diegosieg/neofluxo/"><img src="../img/github.png" alt="github" width="60" height="60"></a>
-                    <a href="mailto:walterlima@pq.cnpq.br"><img src="../img/mail.png" alt="email" width="60" height="60"></a>
+                    <a href="https://www.facebook.com/pages/NeoFluxo/152867231423593"><img src="../images/facebook.png" alt="facebook" width="60" height="60"></a>
+                    <a href="http://www.twitter.com/neofluxo"><img src="../images/twitter.png" alt="twitter" width="60" height="60"></a>
+                    <a href="https://github.com/diegosieg/neofluxo3/"><img src="../images/github.png" alt="github" width="60" height="60"></a>
+                    <a href="mailto:walterlima@pq.cnpq.br"><img src="../images/mail.png" alt="email" width="60" height="60"></a>
+                </div>
+                <div class="col-md-4 col-xs-12 language">
+                    <h3 class="title-foo">Other languages:</h3>
+                    <a href="../en/index.php"><img src="../images/eng.jpg" width="20" height="15"></a>
+                </div>
+                <div class="col-md-2 col-xs-12 license">
+                    <h3 class="title-foo">Licença:</h3>
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/br/"><img alt="Licença Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png" /></a>
                 </div>
         </div>
     </footer>
 </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-    </body>
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../../bower_components/bootstrap/js/button.js"></script>
+        <script src="../../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="../scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
 </html>

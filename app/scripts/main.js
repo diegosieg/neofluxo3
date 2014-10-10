@@ -1,4 +1,4 @@
-$(function(){
+$(window).bind("load", function() {
       $(".context-link").click(function() {
           $(".back-menu").toggleClass("hidden");
         });
@@ -41,5 +41,4 @@ $(function(){
                scrollTop: $(".menu").offset().top
            }, 2000);
         });
-
 });
